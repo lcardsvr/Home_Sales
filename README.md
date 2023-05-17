@@ -39,7 +39,7 @@ Done
 
 - A query is written that returns the average price, rounded to two decimal places, for a four-bedroom house that was sold in each year. (5 points)
 
-SELECT date_built, round(avg (price),2) 
+SELECT date_built, round(avg (price),2)
 AS Average_Price
 FROM home_sales 
 WHERE bedrooms==4 
@@ -66,6 +66,17 @@ WHERE bedrooms==3
 AND bathrooms==3 
 group By date_built
 order by date_built
+
+|date_built|Average_Price|
+|----------|-------------|
+|      2010|    292859.62|
+|      2011|    291117.47|
+|      2012|    293683.19|
+|      2013|    295962.27|
+|      2014|    290852.27|
+|      2015|     288770.3|
+|      2016|    290555.07|
+|      2017|    292676.79|
 
 
 - A query is written that returns the average price of a home with three bedrooms, three bathrooms, two floors, and is greater than or equal to 2,000 square feet for each year built rounded to two decimal places. (5 points)
