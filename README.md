@@ -3,7 +3,7 @@ Module 22 Challenge
 
 ## Requirements
 
-### - A Spark DataFrame is created from the dataset
+### A Spark DataFrame was created from the dataset
 
 
 
@@ -29,15 +29,16 @@ Module 22 Challenge
 |c797ca12-52cd-4b1...|2019-06-08 00:00:00|      2015|288650|       2|        3|       2100|   10419|     2|         0|   7|
 |0cfe57f3-28c2-472...|2019-10-04 00:00:00|      2015|308313|       3|        3|       1960|    9453|     2|         0|   2|
 |4566cd2a-ac6e-435...|2019-07-15 00:00:00|      2016|177541|       3|        3|       2130|   10517|     2|         0|  25|
-|--------------------|-------------------|----------|------|--------|---------|-----------|--------|------|----------|----|
+
+
 only showing top 20 rows
 
 
-### - A temporary table of the original DataFrame is created
+### A temporary table of the original DataFrame was created
 
 Done
 
-### - A query is written that returns the average price, rounded to two decimal places, for a four-bedroom house that was sold in each year
+### Query that returns the average price, rounded to two decimal places, for a four-bedroom house that was sold in each year
 
 SELECT date_built, round(avg (price),2)
 AS Average_Price
@@ -57,7 +58,7 @@ order by date_built
 |      2016|    296050.24|
 |      2017|    296576.69|
 
-### - A query is written that returns the average price, rounded to two decimal places, of a home that has three bedrooms and three bathrooms
+### Query that returns the average price, rounded to two decimal places, of a home that has three bedrooms and three bathrooms
 
 SELECT date_built, round(avg (price),2) 
 AS Average_Price
@@ -79,7 +80,7 @@ order by date_built
 |      2017|    292676.79|
 
 
-### - A query is written that returns the average price of a home with three bedrooms, three bathrooms, two floors, and is greater than or equal to 2,000 square feet for each year built rounded to two decimal places
+### Query that returns the average price of a home with three bedrooms, three bathrooms, two floors, and is greater than or equal to 2,000 square feet for each year built rounded to two decimal places
 
 SELECT date_built, round(avg (price),2) 
 AS Average_Price
@@ -102,7 +103,7 @@ order by date_built
 |      2016|     287812.6|
 |      2017|    282026.59|
 
-### - A query is written that returns the view rating for the average price for homes that are greater than or equal to $350,000, rounded to two decimal places. (The output shows the run time for this query.)
+### Query that returns the view rating for the average price for homes that are greater than or equal to $350,000, rounded to two decimal places. (The output shows the run time for this query)
 
 SELECT round(avg (view),2) 
 AS Average_View_Rating
@@ -116,11 +117,11 @@ WHERE price >=350000
 
 --- 0.48814916610717773 seconds ---
 
-### - A cache of the temporary "home_sales" table is created and validated
+### - A cache of the temporary "home_sales" table was created and validated
 
 Done
 
-### - The query from step 6 is run on the cached temporary table, and the run time is computed
+### Query from step 6 is run on the cached temporary table, and the run time is computed
 
 SELECT round(avg (view),2) 
 AS Average_View_Rating
@@ -134,7 +135,7 @@ WHERE price >=350000
 
 --- 0.23134303092956543 seconds ---
 
-### - A partition of the home sales dataset by the "date_built" field is created, and the formatted parquet data is read
+### A partition of the home sales dataset by the "date_built" field was created, and the formatted parquet data was read
 
 Done
 
@@ -142,7 +143,7 @@ Done
 
 Done
 
-### - The query from step 6 is run on the parquet temporary table, and the run time is computed
+### Query from step 6 was run on the parquet temporary table, and the run time was computed
 
 |Average_View_Rating|
 |-------------------|
@@ -151,7 +152,7 @@ Done
 
 --- 0.3357667922973633 seconds ---
 
-### - The "home_sales" temporary table is uncached and verified
+### The "home_sales" temporary table was uncached and verified
 
 Done
 
