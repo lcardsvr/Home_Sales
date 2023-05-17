@@ -1,5 +1,8 @@
 # Home_Sales
+
 Module 22 Challenge
+
+In this challenge SparkSQL was used to determine key metrics about home sales data. Spark was used to create temporary views, partition the data, cache and uncache a temporary table, and verify that the table had been uncached.
 
 ## Requirements
 
