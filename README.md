@@ -118,7 +118,7 @@ WHERE price >=350000
 |              32.26|
 
 
---- 0.48814916610717773 seconds ---
+--- 0.4138486385345459 seconds ---
 
 ### - A cache of the temporary "home_sales" table was created and validated
 
@@ -136,7 +136,7 @@ WHERE price >=350000
 |              32.26|
 
 
---- 0.4138486385345459 seconds ---
+-- 0.32378363609313965 seconds ---
 
 ### A partition of the home sales dataset by the "date_built" field was created, and the formatted parquet data was read
 
@@ -151,12 +151,6 @@ Done
 |Average_View_Rating|
 |-------------------|
 |              32.26|
-
-Using cached data:
-
---- 0.32378363609313965 seconds ---
-
-Using parquet formated data:
 
 --- 0.6483235359191895 seconds ---
 
