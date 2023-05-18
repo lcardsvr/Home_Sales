@@ -136,7 +136,7 @@ WHERE price >=350000
 |              32.26|
 
 
---- 0.23134303092956543 seconds ---
+--- 0.4138486385345459 seconds ---
 
 ### A partition of the home sales dataset by the "date_built" field was created, and the formatted parquet data was read
 
@@ -152,8 +152,13 @@ Done
 |-------------------|
 |              32.26|
 
+Using cached data:
 
---- 0.3357667922973633 seconds ---
+--- 0.32378363609313965 seconds ---
+
+Using parquet formated data:
+
+--- 0.6483235359191895 seconds ---
 
 ### The "home_sales" temporary table was uncached and verified
 
